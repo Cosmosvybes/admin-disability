@@ -50,7 +50,7 @@ const CreatePage = () => {
       </Modal>
       <Button
         onClick={handleSignout}
-        className=" h-auto rounded-none w-auto fixed z-20 right-20 max-sm:right-5 bottom-24"
+        className=" h-12 rounded-none w-auto fixed z-20 right-20 max-sm:right-2 bottom-24"
       >
         Sign out <Logout className="text-2xl text-black inline" />
       </Button>
@@ -71,9 +71,9 @@ const CreatePage = () => {
         </div>
 
         <div className="relative max-sm:px-2 flex h-auto max-sm:h-auto max-sm:flex-col-reverse  bg-gray-100  px-20 gap-5 max-sm:gap-2  justify-around items-start">
-          <div className="relative h-full   rounded-3xl  py-2 bg-gray-50 px-5 max-sm:px-2  flex justify-start flex-col w-4/5 max-sm:w-full">
+          <div className="relative h-full   rounded-3xl  py-2 bg-gray-50  flex justify-start flex-col w-4/5 max-sm:w-full">
             <div className="relative ">
-              <h1 className="text-4xl font-extrabold text-black text-left mt-5 mb-2">
+              <h1 className="text-4xl font-extrabold text-black text-left max-sm:text-xl mt-5 mb-2">
                 Hey What's new 🤭?
               </h1>
               <div
@@ -103,7 +103,7 @@ const CreatePage = () => {
                 </div>
               </div>
               <div className="relative w-full flex justify-end items-end">
-                <div className="relative  h-full border w-1/4 max-sm:w-full">
+                <div className="relative  h-full border w-1/4 py-3 max-sm:w-full">
                   <label
                     htmlFor="postImage"
                     className="flex justify-between px-4 max-sm:px-2 items-center"
@@ -131,7 +131,7 @@ const CreatePage = () => {
                 <textarea
                   maxLength={500}
                   placeholder="Research brief description"
-                  className="w-full h-72 text-2xl max-sm:text-xl bg-gray-100 rounded-sm  px-2 py-4"
+                  className="w-full h-72 text-2xl max-sm:text-xl border bg-gray-100 rounded-sm  px-2 py-4"
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                 />
