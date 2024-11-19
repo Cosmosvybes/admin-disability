@@ -6,7 +6,7 @@ const Routes_ = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<CreatePage />}></Route>
+        <Route path="/" element={<Signin />}></Route>
         <Route path="/home" element={<CreatePage />}></Route>
       </Routes>
     </>
