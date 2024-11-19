@@ -1,7 +1,7 @@
 import {
   ArrowDropRight,
   Logout,
-  SendFast,
+  SmartSpeaker,
   UploadRectangle,
 } from "react-huge-icons/solid";
 import {
@@ -50,15 +50,15 @@ const CreatePage = () => {
       </Modal>
       <Button
         onClick={handleSignout}
-        className=" h-12 rounded-none w-auto fixed z-20 right-20 max-sm:right-2 bottom-24"
+        className=" h-14 rounded-none w-auto font-bold fixed z-20 right-20 max-sm:right-2 bottom-24"
       >
-        Sign out <Logout className="text-2xl text-black inline" />
+        <Logout className="text-2xl  text-black inline" /> Sign out
       </Button>
       <div className="relative bg-gray-100  py-3 gap-4 flex flex-col">
-        <div className="relative max-sm:px-2 max-sm:items-center flex max-sm:justify-center justify-start px-20 items-center gap-2">
+        <div className="relative max-sm:px-2 max-sm:items-center flex max-sm:justify-center justify-start px-20 items-center gap-4">
           {" "}
           <div
-            className="relative w-24 h-24 max-md:h-24 max-sm:hidden  max-md:w-24 max-sm:w-24 max-sm:w-h-24 flex justify-center items-center rounded-full"
+            className="relative w-24 h-24 max-md:h-24   max-md:w-24 max-sm:w-24 max-sm:w-h-24 flex justify-center items-center rounded-full"
             style={{
               backgroundImage: `url(${motherhoodLogo})`,
               backgroundRepeat: "no-repeat",
@@ -69,13 +69,16 @@ const CreatePage = () => {
             Disability & Motherhood
           </h1>{" "}
         </div>
-
+        <hr className="border-t border-gray-400" />
         <div className="relative max-sm:px-2 flex h-auto max-sm:h-auto max-sm:flex-col-reverse  bg-gray-100  px-20 gap-5 max-sm:gap-2  justify-around items-start">
-          <div className="relative h-full   rounded-3xl  py-2 bg-gray-50  flex justify-start flex-col w-4/5 max-sm:w-full">
-            <div className="relative ">
-              <h1 className="text-4xl font-extrabold text-black text-left max-sm:text-xl mt-5 mb-2">
-                Hey What's new 🤭?
-              </h1>
+          <div className="relative h-full max-sm:border-l-0 max-sm:rounded-bl-none  max-sm:rounded-br-none  shadow-md  px-4 border-l-4 border-black    rounded-3xl  py-2 bg-gray-50 max-sm:border-b-4 flex justify-start flex-col w-4/5 max-sm:w-full">
+            <div className="relative   flex justify-start flex-col">
+              <div className="relative">
+                <h1 className="text-4xl font-extrabold text-black text-left max-sm:text-xl mt-5 mb-2">
+                  Hey What's new 🤭?
+                </h1>
+              </div>
+
               <div
                 className={`relative h-72 mt-4 max-sm:${
                   image ? "h-96" : "h-0"
@@ -150,17 +153,17 @@ const CreatePage = () => {
                   {loading ? (
                     <Spinner size={"sm"} type="border" />
                   ) : (
-                    <SendFast className="text-xl text-white inline" />
+                    <SmartSpeaker className="text-xl text-white inline" />
                   )}
                 </Button>
               </form>
             </div>
           </div>
 
-          <div className="relative max-sm:w-full shadow-md z-30 rounded-3xl h-full max-sm:h-auto bg-gray-50 w-1/4">
+          <div className="relative max-sm:w-full max-sm:rounded-bl-none  max-sm:rounded-br-none border-r-4 max-sm:border-t-4 max-sm:border-r-0  border-black shadow-md z-30 rounded-3xl h-full max-sm:h-auto bg-gray-50 w-1/4">
             <div className="relative justify-center items-center flex px-2 py-3 max-sm:px-1">
               <div
-                className="relative w-24 h-24 max-md:h-24  max-md:w-24 max-sm:w-24 max-sm:w-h-24 flex justify-center items-center rounded-full"
+                className="relative w-24 h-24   max-sm:hidden max-md:h-24  max-md:w-24 max-sm:w-24 max-sm:w-h-24 flex justify-center items-center rounded-full"
                 style={{
                   backgroundImage: `url(${motherhoodLogo})`,
                   backgroundRepeat: "no-repeat",
@@ -169,11 +172,11 @@ const CreatePage = () => {
               ></div>
             </div>
             <div className="relative w-full px-2 max-sm:px-0">
-              <h1 className="text-4xl max-sm:text-2xl font-extrabold text-black text-center mb-2">
+              <h1 className="text-4xl max-sm:text-2xl font-semibold text-black text-center mb-2">
                 Welcome back , Admin
               </h1>
               <div className="relative h-80 flex justify-center items-center flex-col mt-4 px-2 bg-gray-100 w-full rounded-xl">
-                <h1 className="text-xl font-extrabold text-black text-left mb-4">
+                <h1 className="text-xl font-normal text-black text-center mb-4">
                   Field and Research Updates Overview{" "}
                 </h1>
                 <h2 className="text-sm font-semibold text-center text-black mt-2">
