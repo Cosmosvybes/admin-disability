@@ -60,7 +60,7 @@ const Signin = () => {
           </h1>{" "}
         </div>
         <div className="relative py-2 flex max-sm:w-full  flex-col justify-center items-center w-1/3 h-full max-sm:h-auto  bg-gray-50 rounded-2xl shadow-md max-sm:shadow-none">
-          <h1>Welcome back.</h1>
+          <h1>Sign in to your account.</h1>
           <p>Enter your user-ID and passkey to proceed! </p>
           <form
             onSubmit={handleSubmit}
@@ -81,7 +81,7 @@ const Signin = () => {
             </label>
             <Input
               type="password"
-              placeholder="password here"
+              placeholder="passkey here"
               className="py-3 w-full rounded-md"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
