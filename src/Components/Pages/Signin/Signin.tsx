@@ -55,7 +55,7 @@ const Signin = () => {
               backgroundSize: "cover",
             }}
           ></div>
-          <h1 className="text-6xl max-sm:text-2xl  font-extrabold">
+          <h1 className="text-2xl max-sm:text-2xl  font-extrabold">
             Disability & Motherhood
           </h1>{" "}
         </div>
